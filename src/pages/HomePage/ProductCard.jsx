@@ -1,4 +1,5 @@
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 const ProductCard = ({id, name, brand, image, feminine, price}) => {
     return(
@@ -7,6 +8,9 @@ const ProductCard = ({id, name, brand, image, feminine, price}) => {
             <p className="mx-4 text-small text-slate-400">{brand}</p>
             <p className="mx-4 text-small">{name}</p>
             <p className="mx-4 text-small text-green-700">{price}</p>
+            <button className="pg-indigo-950 rounded-md mx-4 my-1 text-slate-100 bg-slate-950 hover:bg-slate-700 ">
+            <FontAwesomeIcon icon={faCartPlus} />
+            </button>
         </article>
    )
 
